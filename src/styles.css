@@ -1,0 +1,56 @@
+.carrousal-wrapper {
+  width: 100%;
+}
+
+.carrousal {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.2rem;
+  scroll-behavior: auto;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+  border-radius: 50px;
+  scroll-snap-align: start;
+}
+
+.carrousal::-webkit-scrollbar {
+  display: none;
+}
+
+.card:nth-child(1) {
+  background: linear-gradient(-229deg, #fbd52d, #ef3a7b);
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(-229deg, #ff70af, #5fa8f5);
+}
+
+.card:nth-child(3) {
+  background: linear-gradient(-229deg, #0cebeb, #29ffc6);
+}
+
+.card:nth-child(4) {
+  background: linear-gradient(-229deg, #88f7f9, #048fff);
+}
+
+.card:nth-child(5) {
+  background: linear-gradient(-229deg, #0093e9, #80d0c7);
+}
+
+.card:nth-child(6) {
+  background: linear-gradient(-229deg, #cf91ff, #5782f5);
+}
+
+.card:nth-child(7) {
+  background: linear-gradient(-229deg, #642b73, #c6426e);
+}
